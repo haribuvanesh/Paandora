@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>LOGIN PAGE</title>
+<script type="text/javascript">
+function mylog()
+{
+var x=document.forms["login"]["user"].value;
+var y=document.forms["login"]["pwd"].value;
+if(x==null||x==""||y==null||y=="")
+    {
+	alert("these fields cannot be empty")
+    }
+
+}
+</script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="form_bg">
+       
+            <form action="" name="login" onsubmit=mylog()>
+            
+                 <h2 class="well">Login Page</h2> 
+                <br/>
+                <div class="form-group">
+                <label for="email">user:</label>
+                    <input type="textbox" class="form-control" id="user" placeholder="User id">
+                </div>
+                <div class="form-group">
+                <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Password">
+                </div>
+                <br/>
+                <center>
+                <div class="align-center">
+                    <button type="submit" class="btn btn-primary" id="login">Login</button>
+                </div>
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
